@@ -5,54 +5,54 @@ use std::collections::HashMap;
 #[allow(non_camel_case_types)]
 #[derive(Clone, Copy, PartialEq, Eq, Debug)]
 pub enum POS {
-    CC,
-    CD,
-    COL,       //:
-    COM,        //,
-    DOL,       //$
-    DT,
-    EX,
-    FW,
-    IN,
-    JJ,
-    JJR,
-    JJS,
-    LRB,       //-LRB-
-    LS,
-    MD,
-    NN,
-    NNP,
-    NNPS,
-    NNS,
-    NOT_SET,
-    PADDING,
-    PDT,
-    POS,
-    POUND,     //#
-    PRP,
-    PRP_POSS,  //PRP$
-    PUNCT,      //.
-    QUOT_B,    //''
-    QUOT_S,    //``
-    RB,
-    RBR,
-    RBS,
-    RP,
-    RRB,       //-RRB-
-    SYM,
-    TO,
-    UH,
-    UNAVAILABLE,
-    VB,
-    VBD,
-    VBG,
-    VBN,
-    VBP,
-    VBZ,
-    WDT,
-    WP,
-    WP_POSS,   //WP$
-    WRB,
+    CC,          // coordinating conjunction (and, or)
+    CD,          // cardinal numeral
+    COL,         // :
+    COM,         // ,
+    DOL,         // $
+    DT,          // singular determiner (this, that)
+    EX,          // existential there
+    FW,          // foregin word (hyphenated before regular tag)
+    IN,          // preposition
+    JJ,          // adjective
+    JJR,         // comparative adjective
+    JJS,         // semantically superlative adjective (chief, top)
+    LRB,         // open parenthesis
+    LS,          // list item marker
+    MD,          // modal auxiliary (can, should, will)
+    NN,          // singular or mass noun
+    NNP,         // proper noun, singular
+    NNPS,        // proper noun, plural
+    NNS,         // plural noun
+    NOT_SET,     // not set
+    PADDING,     // padding
+    PDT,         // predeterminer
+    POS,         // possessive ending
+    POUND,       // #
+    PRP,         // personal pronoun
+    PRP_POSS,    // possessive pronoun
+    PUNCT,       // .
+    QUOT_B,      // ''
+    QUOT_S,      // ``
+    RB,          // adverb
+    RBR,         // comparative adverb
+    RBS,         // adverb, superlative
+    RP,          // adverb/particle (about, off, up)
+    RRB,         // close parenthesis
+    SYM,         // symbol
+    TO,          // to
+    UH,          // interjection, exclamation
+    UNAVAILABLE, // tag unavailable
+    VB,          // verb, base form
+    VBD,         // verb, past tense
+    VBG,         // verb, present particle/gerund
+    VBN,         // verb, past participle
+    VBP,         // verb, non 3rd person, singular, present
+    VBZ,         // verb, 3rd singular present
+    WDT,         // wh- determiner (what, which)
+    WP,          // possessive wh- pronoun (whose)
+    WP_POSS,     // nominative wh- pronoun (who, which, that)
+    WRB,         // wh- adverb (how, where, when)
 }
 
 impl POS {
@@ -161,4 +161,3 @@ impl POS {
         map
     }
 }
-
