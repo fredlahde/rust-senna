@@ -5,54 +5,54 @@ use std::collections::HashMap;
 #[allow(non_camel_case_types)]
 #[derive(Clone, Copy, PartialEq, Eq, Debug)]
 pub enum POS {
-    NNP,
-    COM,        //,
-    CD,
-    NNS,
-    JJ,
-    MD,
-    VB,
-    DT,
-    NN,
-    IN,
-    PUNCT,      //.
-    VBZ,
-    VBG,
     CC,
-    VBD,
-    VBN,
-    RB,
-    TO,
-    PRP,
-    RBR,
-    WDT,
-    VBP,
-    RP,
-    PRP_POSS,  //PRP$
-    JJS,
-    POS,
-    QUOT_S,    //``
-    WP,
-    QUOT_B,    //''
+    CD,
     COL,       //:
-    JJR,
-    WRB,
-    EX,
+    COM,        //,
     DOL,       //$
-    NNPS,
-    WP_POSS,   //WP$
-    LRB,       //-LRB-
-    RRB,       //-RRB-
-    PDT,
-    RBS,
+    DT,
+    EX,
     FW,
-    UH,
-    SYM,
+    IN,
+    JJ,
+    JJR,
+    JJS,
+    LRB,       //-LRB-
     LS,
-    POUND,     //#
-    PADDING,
-    UNAVAILABLE,
+    MD,
+    NN,
+    NNP,
+    NNPS,
+    NNS,
     NOT_SET,
+    PADDING,
+    PDT,
+    POS,
+    POUND,     //#
+    PRP,
+    PRP_POSS,  //PRP$
+    PUNCT,      //.
+    QUOT_B,    //''
+    QUOT_S,    //``
+    RB,
+    RBR,
+    RBS,
+    RP,
+    RRB,       //-RRB-
+    SYM,
+    TO,
+    UH,
+    UNAVAILABLE,
+    VB,
+    VBD,
+    VBG,
+    VBN,
+    VBP,
+    VBZ,
+    WDT,
+    WP,
+    WP_POSS,   //WP$
+    WRB,
 }
 
 impl POS {
