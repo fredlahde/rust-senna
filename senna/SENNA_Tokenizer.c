@@ -137,7 +137,7 @@ SENNA_Tokens* SENNA_Tokenizer_tokenize(SENNA_Tokenizer *tokenizer, const char *s
         break;
       else
       {
-        fprintf(stderr, "WARNING: skipping a char (%c)\n", sentence0n[offset0n]);
+        //fprintf(stderr, "WARNING: skipping a char (%c)\n", sentence0n[offset0n]);
         offset0n++;
         continue;
       }
